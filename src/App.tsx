@@ -51,7 +51,7 @@ function App() {
   }
 
   return (
-    <main >
+    <main className='font-TT'>
       <div className='flex justify-between mt-20'>
         <div className=' flex-1/2 text-black'>
           <img src={hsImage} alt="" className='h-100 w-100 text-black' />
