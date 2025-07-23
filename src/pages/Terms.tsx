@@ -44,8 +44,8 @@ function Terms() {
                   checked={showMatricId}
                   onChange={(e) => setShowMatricId(e.target.checked)}
                 />
-                <div className="w-6 h-6 bg-gray-50 rounded-sm peer peer-checked:bg-gray-50 relative transition-colors duration-300 border-3 border-solid border-gray-700 text-gray-950 align-top">
-                  <p className='self-start align-text-top'>{showMatricId ? "✓" : " "}</p>
+                <div className="w-6 h-6 bg-gray-50 rounded-sm peer peer-checked:bg-gray-50 relative transition-colors duration-300 border-3 border-solid border-gray-700 text-gray-950 align-top font-black">
+                  <p className='self-start align-text-top font-black'>{showMatricId ? "✓" : " "}</p>
                 </div>
               </label>
               <p className='text-sm '>I agree and accept the terms of the privacy and user agreement.</p>
