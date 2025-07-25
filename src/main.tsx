@@ -20,7 +20,7 @@ export function Main() {
 
   return (
     <BrowserRouter>
-      <Navbar countryCode={countryCode} setCountryCode={setCountryCode} />
+      <Navbar setCountryCode={setCountryCode} />
       <div className="px-2">
         <Routes>
           <Route path="/" element={<App countryCode={countryCode} emailValue={emailValue} setEmailValue={setEmailValue} />} />

@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function Denial({ isClosed, onClose, children }: { isClosed: boolean; onClose: any; children: any }) {
   return (
     <div onClick={onClose} className={`fixed inset-0 flex justify-center items-center transition-colors text-black

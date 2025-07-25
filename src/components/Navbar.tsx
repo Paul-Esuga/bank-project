@@ -1,5 +1,3 @@
-// import { useState } from "react";
-// import { Link } from "react-router-dom";
 import hsLogo from "../assets/logo.png"
 import flagNg from "../assets/flag-ng.png"
 import flagGh from "../assets/flag-gh.png"
@@ -9,7 +7,7 @@ import arrow from "../assets/Chevron_Down.png"
 import { useState } from "react";
 
 
-export default function Navbar({ countryCode, setCountryCode }: { countryCode: string; setCountryCode: any }) {
+export default function Navbar({ setCountryCode }: { setCountryCode: any }) {
   // const [menuOpen, setMenuOpen] = useState(false);
   let countries = [
     { name: "Nigeria", flag: flagNg },
@@ -19,7 +17,6 @@ export default function Navbar({ countryCode, setCountryCode }: { countryCode: s
   ];
   let flags = [flagNg, flagGh, flagZm, flagCm]
   let nations = ["Nigeria", "Ghana", "Zimbabwe", "Cameroon"]
-  let nations2 = nations
   const codes = ["+234 -", "+233 -", "+263 -", "+237 -"]
   const [country, setCountry] = useState(countries[0])
   const [showCountry, setShowCountry] = useState(false)

@@ -4,7 +4,7 @@ import cowboy from './assets/cowboy.png'
 import './App.css'
 import { Link, Outlet } from 'react-router-dom'
 
-function App({ countryCode, emailValue, setEmailValue }: { countryCode: string; emailValue: string; setEmailValue: any }) {
+function App({ countryCode, setEmailValue }: { countryCode: string; emailValue: string; setEmailValue: any }) {
   type AccountType = 'PAYMENT ACCOUNT' | 'SAVINGS ACCOUNT' | 'CURRENT ACCOUNT'
   const accounts: AccountType[] = ['PAYMENT ACCOUNT', 'SAVINGS ACCOUNT', 'CURRENT ACCOUNT']
   const [pickObj, setPickObj] = useState<Record<AccountType, boolean>>({
