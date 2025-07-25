@@ -7,7 +7,7 @@ import arrow from "../assets/Chevron_Down.png"
 import { useState } from "react";
 
 
-export default function Navbar({ setCountryCode }: { setCountryCode: any }) {
+export default function Navbar({ countryCode, setCountryCode }: { countryCode: string; setCountryCode: any }) {
   // const [menuOpen, setMenuOpen] = useState(false);
   let countries = [
     { name: "Nigeria", flag: flagNg },
@@ -17,7 +17,7 @@ export default function Navbar({ setCountryCode }: { setCountryCode: any }) {
   ];
   let flags = [flagNg, flagGh, flagZm, flagCm]
   let nations = ["Nigeria", "Ghana", "Zimbabwe", "Cameroon"]
-  const codes = ["+234 -", "+233 -", "+263 -", "+237 -"]
+  let codes = ["+234 -", "+233 -", "+263 -", "+237 -"]
   const [country, setCountry] = useState(countries[0])
   const [showCountry, setShowCountry] = useState(false)
   // const updateCountry = () => {
@@ -45,6 +45,7 @@ export default function Navbar({ setCountryCode }: { setCountryCode: any }) {
                 console.log(countries, " and country: ", country),
                 countries = countries.filter(item => (item.name !== country.name)),
                 console.log(countries, " and country: ", country),
+                codes = codes.filter(item => item !== countryCode),
                 nations.filter(item => item !== country.name).map((nation, key) => {
                   // console.log('nations in map: ', nations)
                   return (
