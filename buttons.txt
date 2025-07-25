@@ -1,0 +1,30 @@
+ {pickObj['PAYMENT ACCOUNT']
+              ?
+              <button className='bg-[#006B3F] text-white w-[100%] rounded-sm p-2 mt-1'>
+                <Link to="/terms" style={{ color: 'white' }} >Proceed </Link>
+              </button>
+              :
+
+              <button className='bg-[#006B3F] text- w-[100%] rounded-sm p-2 mt-1 opacity-50'>
+                <p style={{ color: 'white' }} >Proceed </p>
+              </button>}
+            {pickObj['SAVINGS ACCOUNT']
+              ?
+              <button className='bg-[#006B3F] text-white w-[100%] rounded-sm p-2 mt-1'>
+                <Link to="/terms" style={{ color: 'white' }} >Proceed </Link>
+              </button>
+              :
+
+              <button className='bg-[#006B3F] text- w-[100%] rounded-sm p-2 mt-1 opacity-50'>
+                <p style={{ color: 'white' }} >Proceed </p>
+              </button>}
+            {pickObj['CURRENT ACCOUNT']
+              ?
+              <button className='bg-[#006B3F] text-white w-[100%] rounded-sm p-2 mt-1'>
+                <Link to="/terms" style={{ color: 'white' }} >Proceed </Link>
+              </button>
+              :
+
+              <button className='bg-[#006B3F] text- w-[100%] rounded-sm p-2 mt-1 opacity-50'>
+                <p style={{ color: 'white' }} >Proceed </p>
+              </button>}

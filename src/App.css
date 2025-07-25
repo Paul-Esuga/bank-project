@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+input::-webkit-inner-spin-button {
+  display: none;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -48,6 +52,16 @@
   src: url("./assets/fonts/TT-Norms-Regular.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
+}
+
+.color {
+  background-color: #006b3f;
+  color: white;
+}
+
+.notcolor {
+  background-color: white;
+  color: gray;
 }
 
 /* body {
